@@ -1,0 +1,110 @@
+tlpPduInputPhaseIndex:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.1.2.1.1.1"
+  interval: 5
+  walk: true
+  label:
+    pdu_type: bank
+
+tlpPduCircuitUtilization:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.10.1"
+  interval: 5
+  walk: true
+  float: 0.01
+  label:
+    pdu_type: bank
+
+tlpPduCircuitInputVoltage:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.3.1"
+  interval: 5
+  walk: true
+  float: 0.1
+  label:
+    pdu_type: bank
+
+tlpPduCircuitTotalCurrent:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.4.1"
+  interval: 5
+  walk: true
+  float: 0.01
+  label:
+    pdu_type: bank
+
+tlpPduCircuitTotalPower:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.8.1"
+  interval: 5
+  walk: true
+  float: 1
+  label:
+    pdu_type: bank
+
+tlpPduInputPhaseFrequency:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.1.2.1.3.1"
+  interval: 5
+  walk: true
+  float: 0.1
+  label:
+    pdu_type: bank
+
+tlpPduInputPhaseVoltageMin:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.1.2.1.5.1"
+  interval: 5
+  walk: true
+  float: 0.1
+  label:
+    pdu_type: bank
+
+tlpPduInputPhaseVoltageMax:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.1.2.1.6.1"
+  interval: 5
+  walk: true
+  float: 0.1
+  label:
+    pdu_type: bank
+
+tlpPduInputPhaseCurrent:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.1.2.1.7.1"
+  interval: 5
+  walk: true
+  float: 0.01
+  label:
+    pdu_type: bank
+
+tlpPduCircuitUtilization:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.10.1"
+  interval: 5
+  walk: true
+  float: 0.01
+  label:
+    pdu_type: bank
+
+tlpPduCircuitInputVoltage:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.3.1"
+  interval: 5
+  walk: true
+  float: 0.1
+  label:
+    pdu_type: bank
+
+tlpPduCircuitTotalCurrent:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.4.1"
+  interval: 5
+  walk: true
+  float: 0.01
+  label:
+    pdu_type: bank
+
+tlpPduCircuitTotalPower:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.4.1.1.8.1"
+  interval: 5
+  walk: true
+  float: 1
+  label:
+    pdu_type: bank
+
+tlpPduBreakerStatus:
+  oid: "1.3.6.1.4.1.850.1.1.3.2.3.5.1.1.2.1"
+  interval: 5
+  walk: true
+  label:
+    pdu_type: bank
+

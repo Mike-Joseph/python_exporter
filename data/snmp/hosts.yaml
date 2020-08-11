@@ -1,0 +1,30 @@
+targets.json:
+  # Juniper Switch - Management
+  - config: juniper
+    password: SECRET_HERE
+    condition:
+      type: sw
+      interface_label: mgmt
+  # Juniper Router - Backbone
+  - config: juniper
+    password: SECRET_HERE
+    condition:
+      type: bb
+      interface_label: mgmt
+  # Juniper Firewall
+  - config: juniper
+    password: SECRET_HERE
+    condition:
+      type: fw
+      interface_label: mgmt
+  # Digi Terminal Server
+  - config: ts_digi
+    password: SECRET_HERE
+    condition:
+      type: ts
+  # PDU - Tripp Lite 3-Phase
+  - config: pdu_tripp_lite_3phase
+    password: SECRET_HERE
+    condition:
+      type: pdu
+

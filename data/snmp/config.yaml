@@ -1,0 +1,51 @@
+juniper:
+  interface:
+    key: ifName
+    gauge_metrics: [ifAdminStatus, ifOperStatus]
+    counter_metrics: [ifHCInOctets, ifHCOutOctets]
+
+  system:
+    gauge_metrics:
+      - key: sysUpTime
+        index: 0
+        slice:
+          start: 1
+          stop: -1
+
+    counter_metrics: []
+
+
+ts_digi:
+  interface:
+    key: hrDeviceDescr
+    counter_metrics: [charPortInCharacters, charPortOutCharacters, hrDeviceErrors]
+    gauge_metrics: [hrDeviceStatus]
+
+  system:
+    gauge_metrics: []
+    counter_metrics: []
+
+pdu_tripp_lite_3phase:
+  interface:
+    key: tlpPduInputPhaseIndex
+    counter_metrics: []
+    gauge_metrics:
+      - tlpPduCircuitUtilization
+      - tlpPduCircuitInputVoltage
+      - tlpPduCircuitTotalCurrent
+      - tlpPduCircuitTotalPower
+      - tlpPduInputPhaseFrequency
+      - tlpPduInputPhaseVoltageMin
+      - tlpPduInputPhaseVoltageMax
+      - tlpPduInputPhaseCurrent
+      - tlpPduCircuitUtilization
+      - tlpPduCircuitInputVoltage
+      - tlpPduCircuitTotalCurrent
+      - tlpPduCircuitTotalPower
+      - tlpPduBreakerStatus
+
+  system:
+    gauge_metrics: []
+    counter_metrics: []
+
+

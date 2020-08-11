@@ -1,0 +1,7 @@
+port: 9161
+listen_on: 0.0.0.0
+commands:
+  - module: modules/snmp_exporter.py
+    module_input: {}
+    metric_prefix: net_snmp
+    labelset: {}

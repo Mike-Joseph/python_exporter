@@ -1,0 +1,7 @@
+port: 9753
+listen_on: 127.0.0.1
+commands:
+  - module: modules/process_exporter.py
+    module_input: {}
+    metric_prefix: node_process
+    labelset: {}

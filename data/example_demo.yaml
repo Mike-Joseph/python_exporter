@@ -1,0 +1,22 @@
+port: 9595
+commands:
+  # Demo
+  - shell: "echo client list | redis-cli -h %(host)s"
+    shell_vars:
+      host: redis-host.example.com
+    module: modules/redis_client_list.py
+    metric_prefix: redis
+    labelset:
+      env: demo
+      host: redis-host.example.com
+      service: elasticache
+  - shell: "./scripts/redis.expect %(host)s %(password)s"
+    shell_vars:
+      host: "redis-broker.example.com:6379"
+      password: SECRET_HERE
+    module: modules/redis_broker_expect.py
+    metric_prefix: redis
+    labelset:
+      env: demo
+      host: redis-broker.example.com
+      service: elasticache
